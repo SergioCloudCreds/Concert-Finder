@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct MainTabView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
-#Preview {
-    MainTabView()
+    var body: some View {
+        TabView {
+
+            AttendedView()
+                .tabItem {
+                    Label("Attended", systemImage: "music.mic")
+                }
+
+            UpcomingView()
+                .tabItem {
+                    Label("Upcoming", systemImage: "calendar")
+                }
+
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
+        }
+    }
 }

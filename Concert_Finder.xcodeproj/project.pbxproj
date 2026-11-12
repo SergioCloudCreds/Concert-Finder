@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4913C09530A449AC00A89D23 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913C09430A449AC00A89D23 /* Show.swift */; };
+		4913C09730A4580300A89D23 /* AttendedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913C09630A4580300A89D23 /* AttendedViewModel.swift */; };
 		49C19B9B30A2FC99007CB74F /* Concert_FinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C19B9A30A2FC99007CB74F /* Concert_FinderApp.swift */; };
-		49C19B9D30A2FC99007CB74F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C19B9C30A2FC99007CB74F /* ContentView.swift */; };
+		49C19B9D30A2FC99007CB74F /* AttendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C19B9C30A2FC99007CB74F /* AttendedView.swift */; };
 		49C19B9F30A2FC9A007CB74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C19B9E30A2FC9A007CB74F /* Assets.xcassets */; };
 		49C19BA230A2FC9A007CB74F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C19BA130A2FC9A007CB74F /* Preview Assets.xcassets */; };
+		49C7C21C30A5B87F004E0580 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7C21B30A5B87F004E0580 /* MainTabView.swift */; };
+		49C7C21E30A5B9C2004E0580 /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7C21D30A5B9C2004E0580 /* UpcomingView.swift */; };
+		49C7C22030A5B9DA004E0580 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7C21F30A5B9DA004E0580 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4913C09430A449AC00A89D23 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		4913C09630A4580300A89D23 /* AttendedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendedViewModel.swift; sourceTree = "<group>"; };
 		49C19B9730A2FC99007CB74F /* Concert_Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concert_Finder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C19B9A30A2FC99007CB74F /* Concert_FinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concert_FinderApp.swift; sourceTree = "<group>"; };
-		49C19B9C30A2FC99007CB74F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49C19B9C30A2FC99007CB74F /* AttendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendedView.swift; sourceTree = "<group>"; };
 		49C19B9E30A2FC9A007CB74F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C19BA130A2FC9A007CB74F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49C7C21B30A5B87F004E0580 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		49C7C21D30A5B9C2004E0580 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
+		49C7C21F30A5B9DA004E0580 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4913C08C30A4444600A89D23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4913C09430A449AC00A89D23 /* Show.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4913C08D30A4448A00A89D23 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4913C09630A4580300A89D23 /* AttendedViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4913C08E30A4449C00A89D23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49C19B9C30A2FC99007CB74F /* AttendedView.swift */,
+				49C7C21B30A5B87F004E0580 /* MainTabView.swift */,
+				49C7C21D30A5B9C2004E0580 /* UpcomingView.swift */,
+				49C7C21F30A5B9DA004E0580 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4913C08F30A4455000A89D23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49C19B9E30A2FC9A007CB74F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		49C19B8E30A2FC99007CB74F = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +96,11 @@
 		49C19B9930A2FC99007CB74F /* Concert_Finder */ = {
 			isa = PBXGroup;
 			children = (
+				4913C08F30A4455000A89D23 /* Resources */,
+				4913C08C30A4444600A89D23 /* Models */,
+				4913C08D30A4448A00A89D23 /* ViewModels */,
+				4913C08E30A4449C00A89D23 /* Views */,
 				49C19B9A30A2FC99007CB74F /* Concert_FinderApp.swift */,
-				49C19B9C30A2FC99007CB74F /* ContentView.swift */,
-				49C19B9E30A2FC9A007CB74F /* Assets.xcassets */,
 				49C19BA030A2FC9A007CB74F /* Preview Content */,
 			);
 			path = Concert_Finder;
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C19B9D30A2FC99007CB74F /* ContentView.swift in Sources */,
+				49C7C22030A5B9DA004E0580 /* SettingsView.swift in Sources */,
+				4913C09530A449AC00A89D23 /* Show.swift in Sources */,
+				49C19B9D30A2FC99007CB74F /* AttendedView.swift in Sources */,
+				49C7C21E30A5B9C2004E0580 /* UpcomingView.swift in Sources */,
 				49C19B9B30A2FC99007CB74F /* Concert_FinderApp.swift in Sources */,
+				4913C09730A4580300A89D23 /* AttendedViewModel.swift in Sources */,
+				49C7C21C30A5B87F004E0580 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Concert_Finder/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Concert_Finder/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
