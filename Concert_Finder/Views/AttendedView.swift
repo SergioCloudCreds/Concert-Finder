@@ -40,14 +40,14 @@ struct AttendedView: View {
                 }
             }
             .navigationTitle("Attended")
+            .searchable(text: $vm.searchText, prompt: "Artists, Venues, Cities")
             .toolbar{
                 Button("Add Show!", systemImage: "plus") {
-                    modelContext.insert(Show(artistName: "Yanni",
-                                     venueName: "Maddison Square Garden",
-                                     cityName: "New York",
-                                     date: .now ,
-                                     status: .attended))
+                    viewModel.showingAddSheet = true
                 }
+            }
+            .sheet(isPresented: $vm.showingAddSheet) {
+                AddEditShowView()
             }
         }
     }

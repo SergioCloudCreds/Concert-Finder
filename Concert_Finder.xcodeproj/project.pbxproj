@@ -16,6 +16,8 @@
 		49C7C21C30A5B87F004E0580 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7C21B30A5B87F004E0580 /* MainTabView.swift */; };
 		49C7C21E30A5B9C2004E0580 /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7C21D30A5B9C2004E0580 /* UpcomingView.swift */; };
 		49C7C22030A5B9DA004E0580 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7C21F30A5B9DA004E0580 /* SettingsView.swift */; };
+		49C7C22230A5FF90004E0580 /* AddEditShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7C22130A5FF90004E0580 /* AddEditShowView.swift */; };
+		49C7C22430A6098D004E0580 /* ShowRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7C22330A6098D004E0580 /* ShowRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		49C7C21B30A5B87F004E0580 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		49C7C21D30A5B9C2004E0580 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
 		49C7C21F30A5B9DA004E0580 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		49C7C22130A5FF90004E0580 /* AddEditShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditShowView.swift; sourceTree = "<group>"; };
+		49C7C22330A6098D004E0580 /* ShowRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				49C7C21B30A5B87F004E0580 /* MainTabView.swift */,
 				49C7C21D30A5B9C2004E0580 /* UpcomingView.swift */,
 				49C7C21F30A5B9DA004E0580 /* SettingsView.swift */,
+				49C7C22130A5FF90004E0580 /* AddEditShowView.swift */,
+				49C7C22330A6098D004E0580 /* ShowRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,9 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C7C22430A6098D004E0580 /* ShowRowView.swift in Sources */,
 				49C7C22030A5B9DA004E0580 /* SettingsView.swift in Sources */,
 				4913C09530A449AC00A89D23 /* Show.swift in Sources */,
 				49C19B9D30A2FC99007CB74F /* AttendedView.swift in Sources */,
+				49C7C22230A5FF90004E0580 /* AddEditShowView.swift in Sources */,
 				49C7C21E30A5B9C2004E0580 /* UpcomingView.swift in Sources */,
 				49C19B9B30A2FC99007CB74F /* Concert_FinderApp.swift in Sources */,
 				4913C09730A4580300A89D23 /* AttendedViewModel.swift in Sources */,
