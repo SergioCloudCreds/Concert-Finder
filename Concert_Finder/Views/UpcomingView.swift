@@ -6,10 +6,22 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct UpcomingView: View {
+    
+    @Query(sort: \Show.date) private var allShows: [Show]
+    @Environment(\.modelContext) private var modelContext
+    @State private var viewModel = UpcomingViewModel()
+    
     var body: some View {
-        Text("Upcoming")
+        @Bindable var vm = viewModel
+        
+        NavigationStack{
+            Group{
+                
+            }
+        }
     }
 }
 

@@ -21,7 +21,26 @@ struct ShowRowView: View {
                 Text("-")
                 Text(show.cityName)
             }
+            .font(.subheadline)
+            .foregroundStyle(.secondary)
+            
+            HStack{
+                Text(show.date.formatted(date: .abbreviated, time: .omitted))
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                if let rating = show.rating {
+                    Spacer()
+                    HStack (spacing: 2) {
+                        ForEach (1...5, id: \.self) { star in
+                            Image(systemName: star <= rating ? "star.fill" : "star")
+                                .font(.caption2)
+                                .foregroundStyle(star <= rating ? Color.yellow : Color.secondary)
+                        }
+                    }
+                }
+            }
         }
+        .padding(.vertical, 2)
     }
 }
 
