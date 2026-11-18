@@ -19,7 +19,36 @@ struct UpcomingView: View {
         
         NavigationStack{
             Group{
-                
+                if viewModel.filteredShows(allShows).isEmpty{
+                    ContentUnavailableView("No Upcoming Shows", systemImage: "calendar")
+                } else {
+                    List {
+                        ForEach (viewModel.filteredShows(allShows)) {
+                            show in
+                            NavigationLink(value : show){
+                                ShowRowView(show: show)
+                            }
+                        }
+                        .onDelete(perform: { indexSet in
+                            let shows = viewModel.filteredShows(allShows)
+                            for index in indexSet {
+                                viewModel.delete(shows[index], context: modelContext)
+                            }
+                        })
+                    }
+                }
+            }
+            .navigationTitle("Upcoming")
+            .navigationDestination(for: Show.self) {
+                show in
+                //ShowDetailView
+            }
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button("Add show", systemImage: "plus") {
+                        viewModel.showingAddSheet = true
+                    }
+                }
             }
         }
     }
