@@ -50,10 +50,14 @@ struct UpcomingView: View {
                     }
                 }
             }
+            .sheet(isPresented: $vm.showingAddSheet) {
+                AddEditShowView()
+            }
         }
     }
 }
 
 #Preview {
     UpcomingView()
+        .modelContainer(for: Show.self, inMemory: true)
 }

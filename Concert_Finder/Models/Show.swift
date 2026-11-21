@@ -12,7 +12,6 @@ import SwiftUI
 enum ShowStatus : String, Codable, CaseIterable{
     case attended
     case upcoming
-    case missed
 }
 
 @Model
