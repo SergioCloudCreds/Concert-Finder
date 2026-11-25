@@ -1,0 +1,55 @@
+//
+//  MarkAttendedSheet.swift
+//  Concert_Finder
+//
+//  Created by Ghost on 2026/11/24.
+//
+
+import SwiftUI
+
+struct MarkAttendedSheet: View {
+    let show: Show
+    @Bindable var viewModel: UpcomingViewModel
+    @Environment(\.dismiss) private var dismiss
+    
+    var body: some View {
+        NavigationStack{
+            VStack(spacing : 24){
+                Text("How was \(show.artistName)?")
+                    .font(.title2)
+                    .bold()
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+                    .padding(.top)
+                
+                //StarRatingView
+                
+                Text("Optional - you can always add rating later!")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                Spacer()
+            }
+            .padding()
+            .navigationTitle("Mark As Attended")
+            .navigationBarTitleDisplayMode(.inline)
+            
+            .toolbar {
+            ToolbarItem(placement: .cancellationAction) {
+                Button("Cancel"){
+                    viewModel.pendingRating = 0
+                    dismiss()
+                }
+            }
+            ToolbarItem(placement: .confirmationAction) {
+                Button("Done"){
+                    viewModel.markAsAttended(show)
+                    dismiss()
+                }
+            }
+            }
+        }
+        .presentationDetents([.medium])
+    }
+}
+
+

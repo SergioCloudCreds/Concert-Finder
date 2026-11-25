@@ -41,7 +41,36 @@ struct AddEditShowView: View {
                         .lineLimit(3...6)
                 }
                 Section("Setlist") {
-                    ForEach()
+                    ForEach(viewModel.setlist.indices, id: \.self){
+                        index in
+                        
+                        HStack{
+                            Text("\(index + 1)")
+                                .foregroundStyle(.secondary)
+                                .frame(width: 28, alignment: .leading)
+                            Text(viewModel.setlist[index])
+                        }
+                    }
+                    .onDelete { viewModel.setlist.remove(atOffsets: $0) }
+                    .onMove { viewModel.setlist.move(fromOffsets: $0, toOffset: $1) }
+                    TextField("Add Song", text: $vm.newSetlistEntry)
+                    Button ("Add") {
+                        viewModel.addSetlistEntry()
+                    }
+                    .disabled(viewModel.newSetlistEntry.trimmingCharacters(in: .whitespaces).isEmpty)
+                    
+                }
+            }
+            .navigationTitle(existingShow == nil ? "Add Show" : "Edit Show")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { dismiss() }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button ("Save") {
+                        viewModel.save(to: modelContext, existing: existingShow); dismiss() }
+                    .disabled(!viewModel.isValid)
                 }
             }
         }

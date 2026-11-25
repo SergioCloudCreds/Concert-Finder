@@ -10,6 +10,7 @@
 		4913C09530A449AC00A89D23 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913C09430A449AC00A89D23 /* Show.swift */; };
 		4913C09730A4580300A89D23 /* AttendedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913C09630A4580300A89D23 /* AttendedViewModel.swift */; };
 		4989400D30B03C190096C761 /* AddEditShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989400C30B03C190096C761 /* AddEditShowViewModel.swift */; };
+		49B4D33E30B5923700FF9D01 /* MarkAttendedSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */; };
 		49C19B9B30A2FC99007CB74F /* Concert_FinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C19B9A30A2FC99007CB74F /* Concert_FinderApp.swift */; };
 		49C19B9D30A2FC99007CB74F /* AttendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C19B9C30A2FC99007CB74F /* AttendedView.swift */; };
 		49C19B9F30A2FC9A007CB74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C19B9E30A2FC9A007CB74F /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		4913C09430A449AC00A89D23 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		4913C09630A4580300A89D23 /* AttendedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendedViewModel.swift; sourceTree = "<group>"; };
 		4989400C30B03C190096C761 /* AddEditShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditShowViewModel.swift; sourceTree = "<group>"; };
+		49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAttendedSheet.swift; sourceTree = "<group>"; };
 		49C19B9730A2FC99007CB74F /* Concert_Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concert_Finder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C19B9A30A2FC99007CB74F /* Concert_FinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concert_FinderApp.swift; sourceTree = "<group>"; };
 		49C19B9C30A2FC99007CB74F /* AttendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendedView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				49C7C21F30A5B9DA004E0580 /* SettingsView.swift */,
 				49C7C22130A5FF90004E0580 /* AddEditShowView.swift */,
 				49C7C22330A6098D004E0580 /* ShowRowView.swift */,
+				49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				49C19B9D30A2FC99007CB74F /* AttendedView.swift in Sources */,
 				49C7C22230A5FF90004E0580 /* AddEditShowView.swift in Sources */,
 				49C7C21E30A5B9C2004E0580 /* UpcomingView.swift in Sources */,
+				49B4D33E30B5923700FF9D01 /* MarkAttendedSheet.swift in Sources */,
 				4989400D30B03C190096C761 /* AddEditShowViewModel.swift in Sources */,
 				49C19B9B30A2FC99007CB74F /* Concert_FinderApp.swift in Sources */,
 				4913C09730A4580300A89D23 /* AttendedViewModel.swift in Sources */,
