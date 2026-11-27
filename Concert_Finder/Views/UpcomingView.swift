@@ -20,7 +20,7 @@ struct UpcomingView: View {
         NavigationStack{
             Group{
                 if viewModel.filteredShows(allShows).isEmpty{
-                    ContentUnavailableView("No Upcoming Shows", systemImage: "calendar")
+                    EmptyStateView(icon: "Calendar", title: "Nothing Coming Up", message:  "Save Shows You Are Planning To Attend")
                 } else {
                     List {
                         ForEach (viewModel.filteredShows(allShows)) {

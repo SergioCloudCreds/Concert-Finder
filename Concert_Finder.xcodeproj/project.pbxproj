@@ -13,6 +13,8 @@
 		4924B23330B9B27900763BA4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924B23230B9B27900763BA4 /* OnboardingView.swift */; };
 		4924B23530B9BBB100763BA4 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924B23430B9BBB100763BA4 /* OnboardingPageView.swift */; };
 		4924B23730B9BF7C00763BA4 /* OnboardingNotificationsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924B23630B9BF7C00763BA4 /* OnboardingNotificationsPage.swift */; };
+		4924B23930B9C61B00763BA4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924B23830B9C61B00763BA4 /* SettingsViewModel.swift */; };
+		4924B23B30B9E20900763BA4 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924B23A30B9E20900763BA4 /* EmptyStateView.swift */; };
 		494A028D30B9968C002CD23C /* ShowDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A028C30B9968C002CD23C /* ShowDetailView.swift */; };
 		4989400D30B03C190096C761 /* AddEditShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989400C30B03C190096C761 /* AddEditShowViewModel.swift */; };
 		49B4D33E30B5923700FF9D01 /* MarkAttendedSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */; };
@@ -35,6 +37,8 @@
 		4924B23230B9B27900763BA4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		4924B23430B9BBB100763BA4 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		4924B23630B9BF7C00763BA4 /* OnboardingNotificationsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNotificationsPage.swift; sourceTree = "<group>"; };
+		4924B23830B9C61B00763BA4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		4924B23A30B9E20900763BA4 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		494A028C30B9968C002CD23C /* ShowDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailView.swift; sourceTree = "<group>"; };
 		4989400C30B03C190096C761 /* AddEditShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditShowViewModel.swift; sourceTree = "<group>"; };
 		49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAttendedSheet.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 				4913C09630A4580300A89D23 /* AttendedViewModel.swift */,
 				49D5AF1D30A714DB006DB366 /* UpcomingViewModel.swift */,
 				4989400C30B03C190096C761 /* AddEditShowViewModel.swift */,
+				4924B23830B9C61B00763BA4 /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 				4924B23230B9B27900763BA4 /* OnboardingView.swift */,
 				4924B23430B9BBB100763BA4 /* OnboardingPageView.swift */,
 				4924B23630B9BF7C00763BA4 /* OnboardingNotificationsPage.swift */,
+				4924B23A30B9E20900763BA4 /* EmptyStateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +222,7 @@
 			files = (
 				49C7C22430A6098D004E0580 /* ShowRowView.swift in Sources */,
 				49C7C22030A5B9DA004E0580 /* SettingsView.swift in Sources */,
+				4924B23B30B9E20900763BA4 /* EmptyStateView.swift in Sources */,
 				4924B23730B9BF7C00763BA4 /* OnboardingNotificationsPage.swift in Sources */,
 				49D5AF1E30A714DC006DB366 /* UpcomingViewModel.swift in Sources */,
 				4924B23330B9B27900763BA4 /* OnboardingView.swift in Sources */,
@@ -231,6 +238,7 @@
 				4913C09730A4580300A89D23 /* AttendedViewModel.swift in Sources */,
 				4924B23530B9BBB100763BA4 /* OnboardingPageView.swift in Sources */,
 				49C7C21C30A5B87F004E0580 /* MainTabView.swift in Sources */,
+				4924B23930B9C61B00763BA4 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
