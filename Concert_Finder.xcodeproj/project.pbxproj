@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4913C09530A449AC00A89D23 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913C09430A449AC00A89D23 /* Show.swift */; };
 		4913C09730A4580300A89D23 /* AttendedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913C09630A4580300A89D23 /* AttendedViewModel.swift */; };
+		494A028D30B9968C002CD23C /* ShowDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A028C30B9968C002CD23C /* ShowDetailView.swift */; };
 		4989400D30B03C190096C761 /* AddEditShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989400C30B03C190096C761 /* AddEditShowViewModel.swift */; };
 		49B4D33E30B5923700FF9D01 /* MarkAttendedSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */; };
 		49C19B9B30A2FC99007CB74F /* Concert_FinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C19B9A30A2FC99007CB74F /* Concert_FinderApp.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		4913C09430A449AC00A89D23 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		4913C09630A4580300A89D23 /* AttendedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendedViewModel.swift; sourceTree = "<group>"; };
+		494A028C30B9968C002CD23C /* ShowDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailView.swift; sourceTree = "<group>"; };
 		4989400C30B03C190096C761 /* AddEditShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditShowViewModel.swift; sourceTree = "<group>"; };
 		49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAttendedSheet.swift; sourceTree = "<group>"; };
 		49C19B9730A2FC99007CB74F /* Concert_Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concert_Finder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 				49C7C22130A5FF90004E0580 /* AddEditShowView.swift */,
 				49C7C22330A6098D004E0580 /* ShowRowView.swift */,
 				49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */,
+				494A028C30B9968C002CD23C /* ShowDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,7 +160,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					49C19B9630A2FC99007CB74F = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -203,6 +206,7 @@
 				49C7C22030A5B9DA004E0580 /* SettingsView.swift in Sources */,
 				49D5AF1E30A714DC006DB366 /* UpcomingViewModel.swift in Sources */,
 				4913C09530A449AC00A89D23 /* Show.swift in Sources */,
+				494A028D30B9968C002CD23C /* ShowDetailView.swift in Sources */,
 				49C19B9D30A2FC99007CB74F /* AttendedView.swift in Sources */,
 				49C7C22230A5FF90004E0580 /* AddEditShowView.swift in Sources */,
 				49C7C21E30A5B9C2004E0580 /* UpcomingView.swift in Sources */,
@@ -253,6 +257,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -313,6 +318,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
