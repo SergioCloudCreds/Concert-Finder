@@ -1,0 +1,66 @@
+//
+//  OnboardingView.swift
+//  Concert_Finder
+//
+//  Created by Ghost on 2026/11/27.
+//
+
+import SwiftUI
+import UserNotifications
+
+struct OnboardingView: View {
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
+    @State private var currentPage = 0
+    @State private var notificationsRequested = false
+    
+    private let pages: [(icon: String, color: Color, title: String, description: String)] = [("ticket.fill", .red, "Your Concert History", "Log every show. Build a record of your live music journey"),
+        ("music.microphone.circle.fill", .purple, "Every Detail Captured", "Set lists, ratings, notes - Everything that made each night unforgettable."),
+        ("calendar", .blue, "Never Miss A Show", "Save upcoming concerts and keep track of whats on your radar")
+    ]
+    
+    private var isLastPage: Bool {
+        currentPage == pages.count
+    }
+    
+    private func advance() {
+        if isLastPage {
+            hasCompletedOnboarding = true
+        } else {
+            withAnimation { currentPage += 1 }
+        }
+    }
+    
+    var body: some View {
+        
+        VStack{
+            TabView(selection: $currentPage,
+                    content:  {
+                ForEach(pages.indices, id: \.self) { index in
+                    OnboardingPageView(icon: pages[index].icon, color: pages[index].color, title: pages[index].title, description: pages[index].description)
+                        .tag(index)
+                }
+                OnboardingNotificationsPage(notificationsRequested: $notificationsRequested)
+                    .tag(pages.count)
+            })
+            .tabViewStyle(.page(indexDisplayMode: .always))
+            .animation(.easeInOut, value: currentPage)
+            
+            Button(action: advance) {
+                Text(isLastPage ? "Lets go" : "Continue")
+                    .font(.headline)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.accentColor)
+                    .foregroundStyle(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+            }
+            .padding(.horizontal)
+            .padding(.bottom, 32)
+        }
+        
+    }
+}
+
+#Preview {
+    OnboardingView()
+}

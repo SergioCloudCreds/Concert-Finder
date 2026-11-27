@@ -10,9 +10,15 @@ import SwiftData
 
 @main
 struct Concert_FinderApp: App {
+    
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            if hasCompletedOnboarding {
+                MainTabView()
+            } else {
+                OnboardingView()
+            }
         }
         .modelContainer(for: Show.self)
     }

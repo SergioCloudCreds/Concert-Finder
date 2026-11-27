@@ -26,8 +26,81 @@ struct ShowDetailView: View {
                 LabeledContent("Date", value: show.date.formatted(date: .long, time: .omitted))
                 LabeledContent("Status", value: show.status.rawValue.capitalized)
             }
+            
+            if show.status == .attended {
+                Section("Rating"){
+                    StarRatingView(rating: Binding(get: {show.rating ?? 0 }, set: {show.rating = $0 > 0 ? $0 : nil }))
+                }
+            }
+            
+            Section("Notes"){
+                if let notes = show.notes, !notes.isEmpty{
+                    Text(notes)
+                } else {
+                    Text("No notes added!")
+                        .foregroundStyle(.secondary)
+                }
+            }
+            
+            Section("Setlist") {
+                if show.setlist.isEmpty {
+                    Text("No Songs Added!")
+                        .foregroundStyle(.secondary)
+                } else {
+                    ForEach(show.setlist.indices, id: \.self){ index in
+                        HStack{
+                            Text("\(index + 1)")
+                                .foregroundStyle(.secondary)
+                                .frame(width: 28, alignment: .leading)
+                            Text(show.setlist[index])
+                        }
+                    }
+                    .onDelete(perform: { indexSet in
+                        show.setlist.remove(atOffsets: indexSet)
+                    })
+                    .onMove(perform: { source, destination in
+                        show.setlist.move(fromOffsets: source, toOffset: destination)
+                    })
+                }
+                HStack{
+                    TextField("Add song", text: $newSetlistEntry)
+                    Button("Add"){
+                        let trimmed = newSetlistEntry.trimmingCharacters(in: .whitespaces)
+                        guard !trimmed.isEmpty else { return }
+                        show.setlist.append(trimmed)
+                        newSetlistEntry = ""
+                    }
+                    .disabled(newSetlistEntry.trimmingCharacters(in: .whitespaces).isEmpty)
+                }
+            }
         }
-        
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Menu {
+                    Button("Edit Show"){
+                        showingEditSheet = true
+                    }
+                    Divider()
+                    Button("Delete Show", role: .destructive){
+                        showingDeleteAlert = true
+                    }
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
+        }
+        .sheet(isPresented: $showingEditSheet ,content: {
+            AddEditShowView(show: show)
+        })
+        .alert("Delete Show?", isPresented: $showingDeleteAlert) {
+            Button("Delete", role: .destructive){
+                modelContext.delete(show)
+                dismiss()
+            }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("This will permanently remove \(show.artistName) from your history.")
+        }
     }
 }
 

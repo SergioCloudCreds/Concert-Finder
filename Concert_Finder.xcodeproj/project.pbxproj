@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4913C09530A449AC00A89D23 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913C09430A449AC00A89D23 /* Show.swift */; };
 		4913C09730A4580300A89D23 /* AttendedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913C09630A4580300A89D23 /* AttendedViewModel.swift */; };
+		4924B23130B9A16B00763BA4 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924B23030B9A16B00763BA4 /* StarRatingView.swift */; };
+		4924B23330B9B27900763BA4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924B23230B9B27900763BA4 /* OnboardingView.swift */; };
+		4924B23530B9BBB100763BA4 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924B23430B9BBB100763BA4 /* OnboardingPageView.swift */; };
+		4924B23730B9BF7C00763BA4 /* OnboardingNotificationsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924B23630B9BF7C00763BA4 /* OnboardingNotificationsPage.swift */; };
 		494A028D30B9968C002CD23C /* ShowDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A028C30B9968C002CD23C /* ShowDetailView.swift */; };
 		4989400D30B03C190096C761 /* AddEditShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989400C30B03C190096C761 /* AddEditShowViewModel.swift */; };
 		49B4D33E30B5923700FF9D01 /* MarkAttendedSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */; };
@@ -27,6 +31,10 @@
 /* Begin PBXFileReference section */
 		4913C09430A449AC00A89D23 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		4913C09630A4580300A89D23 /* AttendedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendedViewModel.swift; sourceTree = "<group>"; };
+		4924B23030B9A16B00763BA4 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		4924B23230B9B27900763BA4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		4924B23430B9BBB100763BA4 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		4924B23630B9BF7C00763BA4 /* OnboardingNotificationsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNotificationsPage.swift; sourceTree = "<group>"; };
 		494A028C30B9968C002CD23C /* ShowDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailView.swift; sourceTree = "<group>"; };
 		4989400C30B03C190096C761 /* AddEditShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditShowViewModel.swift; sourceTree = "<group>"; };
 		49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAttendedSheet.swift; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 				49C7C22330A6098D004E0580 /* ShowRowView.swift */,
 				49B4D33D30B5923700FF9D01 /* MarkAttendedSheet.swift */,
 				494A028C30B9968C002CD23C /* ShowDetailView.swift */,
+				4924B23030B9A16B00763BA4 /* StarRatingView.swift */,
+				4924B23230B9B27900763BA4 /* OnboardingView.swift */,
+				4924B23430B9BBB100763BA4 /* OnboardingPageView.swift */,
+				4924B23630B9BF7C00763BA4 /* OnboardingNotificationsPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,16 +216,20 @@
 			files = (
 				49C7C22430A6098D004E0580 /* ShowRowView.swift in Sources */,
 				49C7C22030A5B9DA004E0580 /* SettingsView.swift in Sources */,
+				4924B23730B9BF7C00763BA4 /* OnboardingNotificationsPage.swift in Sources */,
 				49D5AF1E30A714DC006DB366 /* UpcomingViewModel.swift in Sources */,
+				4924B23330B9B27900763BA4 /* OnboardingView.swift in Sources */,
 				4913C09530A449AC00A89D23 /* Show.swift in Sources */,
 				494A028D30B9968C002CD23C /* ShowDetailView.swift in Sources */,
 				49C19B9D30A2FC99007CB74F /* AttendedView.swift in Sources */,
 				49C7C22230A5FF90004E0580 /* AddEditShowView.swift in Sources */,
+				4924B23130B9A16B00763BA4 /* StarRatingView.swift in Sources */,
 				49C7C21E30A5B9C2004E0580 /* UpcomingView.swift in Sources */,
 				49B4D33E30B5923700FF9D01 /* MarkAttendedSheet.swift in Sources */,
 				4989400D30B03C190096C761 /* AddEditShowViewModel.swift in Sources */,
 				49C19B9B30A2FC99007CB74F /* Concert_FinderApp.swift in Sources */,
 				4913C09730A4580300A89D23 /* AttendedViewModel.swift in Sources */,
+				4924B23530B9BBB100763BA4 /* OnboardingPageView.swift in Sources */,
 				49C7C21C30A5B87F004E0580 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
